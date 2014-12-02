@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="/css/application.css">
 
+
   <script src="js/vendor/modernizr.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
@@ -23,17 +24,19 @@
   <script>
     $(document).foundation();
   </script>
+  <script src="js/backstretch.js"></script>
 
   <title>Title?</title>
 </head>
 <body>
- <header>
-  <div id="login-bar">
-    <% if current_user %>
-      <a href="/logout">Logout</a>
-    <% else %>
-      <a href="/login">Login</a> | <a href="/signup">Signup</a>
-    <% end %>
+  <header>
+<!--     <div id="login-bar">
+      <% if current_user %>
+        <a href="/logout">Logout</a>
+      <% else %>
+        <a href="/login">Login</a> | <a href="/signup">Signup</a>
+      <% end %>
+    </div> -->
   </header>
   <%= yield %>
 </body>
